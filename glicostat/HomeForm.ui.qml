@@ -5,10 +5,10 @@ Page {
     width: 600
     height: 400
 
-    title: qsTr("Home")
+    title: qsTr("Glicostat")
 
     Label {
-        text: qsTr("You are on the home page.")
+        text: qsTr("Welcome at Glicostat application!")
         anchors.centerIn: parent
     }
 }

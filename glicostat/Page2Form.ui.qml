@@ -5,7 +5,7 @@ Page {
     width: 600
     height: 400
 
-    title: qsTr("Page 2")
+    title: qsTr("Date personale")
 
     Label {
         text: qsTr("You are on Page 2.")

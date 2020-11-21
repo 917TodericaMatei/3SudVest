@@ -5,10 +5,14 @@ Page {
     width: 600
     height: 400
 
-    title: qsTr("Page 1")
+    title: qsTr("Alimente")
 
     Label {
-        text: qsTr("You are on Page 1.")
+        TextField {
+            x: -151
+            y: 22
+            placeholderText: qsTr("Introduceti alimentul:")
+         }
         anchors.centerIn: parent
     }
 }
