@@ -248,6 +248,7 @@ Makefile: ../glicostat/glicostat.pro ../../../../Desktop/QT/5.15.2/mingw81_64/mk
 		../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/qt_config.prf \
 		../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/win32-g++/qmake.conf \
 		../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/toolchain.prf \
 		../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/default_pre.prf \
@@ -278,7 +279,6 @@ Makefile: ../glicostat/glicostat.pro ../../../../Desktop/QT/5.15.2/mingw81_64/mk
 		../../../../Desktop/QT/5.15.2/mingw81_64/lib/Qt5Network.prl \
 		../../../../Desktop/QT/5.15.2/mingw81_64/lib/Qt5Core.prl \
 		../../../../Desktop/QT/5.15.2/mingw81_64/lib/qtmain.prl \
-		.qmake.stash \
 		../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/build_pass.prf \
 		../glicostat/qml.qrc
 	$(QMAKE) -o Makefile ..\glicostat\glicostat.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -460,6 +460,7 @@ Makefile: ../glicostat/glicostat.pro ../../../../Desktop/QT/5.15.2/mingw81_64/mk
 ../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/qt_config.prf:
 ../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/win32-g++/qmake.conf:
 ../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/toolchain.prf:
 ../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/default_pre.prf:
@@ -490,7 +491,6 @@ Makefile: ../glicostat/glicostat.pro ../../../../Desktop/QT/5.15.2/mingw81_64/mk
 ../../../../Desktop/QT/5.15.2/mingw81_64/lib/Qt5Network.prl:
 ../../../../Desktop/QT/5.15.2/mingw81_64/lib/Qt5Core.prl:
 ../../../../Desktop/QT/5.15.2/mingw81_64/lib/qtmain.prl:
-.qmake.stash:
 ../../../../Desktop/QT/5.15.2/mingw81_64/mkspecs/features/build_pass.prf:
 ../glicostat/qml.qrc:
 qmake: FORCE

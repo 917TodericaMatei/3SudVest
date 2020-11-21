@@ -35,11 +35,12 @@ ApplicationWindow {
         width: window.width * 0.66
         height: window.height
 
+
         Column {
             anchors.fill: parent
 
             ItemDelegate {
-                text: qsTr("Page 1")
+                text: qsTr("Numele alimentului")
                 width: parent.width
                 onClicked: {
                     stackView.push("Page1Form.ui.qml")
@@ -47,10 +48,26 @@ ApplicationWindow {
                 }
             }
             ItemDelegate {
-                text: qsTr("Page 2")
+                text: qsTr("Camara scan")
                 width: parent.width
                 onClicked: {
                     stackView.push("Page2Form.ui.qml")
+                    drawer.close()
+                }
+            }
+            ItemDelegate {
+                text: qsTr("Detalii despre produs")
+                width: parent.width
+                onClicked: {
+                    stackView.push("Page3Form.ui.qml")
+                    drawer.close()
+                }
+            }
+            ItemDelegate {
+                text: qsTr("Helps and tips")
+                width: parent.width
+                onClicked: {
+                    stackView.push("Page4Form.ui.qml")
                     drawer.close()
                 }
             }
