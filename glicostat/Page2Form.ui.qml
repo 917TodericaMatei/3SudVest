@@ -1,6 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-
+import QtMultimedia 5.15
 Page {
 
         width: 600
@@ -76,8 +76,45 @@ Page {
             placeholderText: qsTr("Introduceti codul:")
         }
     }
+
+
     Item {
-        property bool isCameraAvailable: QtMultimedia.availableCameras.length > 0
+        width: 640
+        height: 360
+
+        Camera {
+            id: camera
+
+            imageProcessing.whiteBalanceMode: CameraImageProcessing.WhiteBalanceFlash
+
+            exposure {
+                exposureCompensation: -1.0
+                exposureMode: Camera.ExposurePortrait
+            }
+
+            flash.mode: Camera.FlashRedEyeReduction
+
+            imageCapture {
+                onImageCaptured: {
+                    photoPreview.source = preview  // Show the preview in an Image
+                }
+            }
+        }
+
+        VideoOutput {
+            source: camera
+            anchors.fill: parent
+            focus : visible // to receive focus and capture key events when visible
+        }
+
+        Image {
+            id: photoPreview
+        }
     }
 
+
 }
+
+
+
+
