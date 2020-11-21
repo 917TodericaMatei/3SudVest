@@ -8,6 +8,7 @@ ApplicationWindow {
     visible: true
     title: qsTr("Stack")
 
+
     header: ToolBar {
         contentHeight: toolButton.implicitHeight
 
@@ -36,6 +37,7 @@ ApplicationWindow {
         height: window.height
 
 
+
         Column {
             anchors.fill: parent
 
@@ -53,6 +55,7 @@ ApplicationWindow {
                 onClicked: {
                     stackView.push("Page2Form.ui.qml")
                     drawer.close()
+
                 }
             }
             ItemDelegate {

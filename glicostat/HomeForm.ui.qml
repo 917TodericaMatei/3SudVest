@@ -5,6 +5,7 @@ Page {
     width: 600
     height: 400
 
+
     title: qsTr("Glicostat")
 
     Label {

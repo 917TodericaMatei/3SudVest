@@ -2,10 +2,14 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick 2.12
 import QtQuick.Controls 2.12
+
 Page {
+    property alias questionVisible: control
+    property bool showLabels: true
+    property alias coffeeLabel: control.text
+
     width: 600
     height: 400
-
     title: qsTr("Alimente")
   Label {
       text: qsTr("Introduceti alimentul pentru a afla cate calorii are.")
@@ -47,6 +51,7 @@ Page {
                  radius: 2
 
              }
+
 
          }
 
