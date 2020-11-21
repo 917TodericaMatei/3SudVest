@@ -99,9 +99,12 @@ compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_qml.cpp
 debug/qrc_qml.cpp: ../glicostat/qml.qrc \
 		../../../../Desktop/QT/5.15.2/mingw81_64/bin/rcc.exe \
+		../glicostat/Selecter.qml \
 		../glicostat/Page1Form.ui.qml \
 		../glicostat/Page2Form.ui.qml \
+		../glicostat/Page3Form.ui.qml \
 		../glicostat/HomeForm.ui.qml \
+		../glicostat/Page4Form.ui.qml \
 		../glicostat/qtquickcontrols2.conf \
 		../glicostat/main.qml
 	C:\Users\user\Desktop\QT\5.15.2\mingw81_64\bin\rcc.exe -name qml ..\glicostat\qml.qrc -o debug\qrc_qml.cpp
